@@ -1,5 +1,5 @@
-function App() {
-    return <div className="">Hello, World!</div>
-}
+import { AppRouter } from './providers/Router/AppRouter'
 
-export default App
+export const App = () => {
+    return <AppRouter />
+}
