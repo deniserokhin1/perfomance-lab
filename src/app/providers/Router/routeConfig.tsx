@@ -4,8 +4,8 @@ import { FoodPage } from '@/pages/FoodPage'
 import { MainPage } from '@/pages/MainPage'
 import { ElectronicsPage } from '@/pages/ElectronicsPage'
 import { ClothPage } from '@/pages/ClothPage'
-
-import { AppRoutes, routePath } from './const/router'
+import { AppRoutes, routePath } from '@/shared/const/router'
+import { NotFoundPage } from '@/pages/NotFoundPage'
 
 export type AppRoutesProps = RouteProps & RouteObject
 
@@ -25,5 +25,9 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     electronics: {
         path: routePath.electronics(),
         element: <ElectronicsPage />,
+    },
+    not_found: {
+        path: routePath.not_found(),
+        element: <NotFoundPage />,
     },
 }

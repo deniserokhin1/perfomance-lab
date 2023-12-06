@@ -1,4 +1,4 @@
-import { AppRoutes } from '../providers/Router/const/router'
+import { AppRoutes } from '@/shared/const/router'
 
 export type RouteFunction<Params extends any[] = any[]> = (...args: Params) => string
 
@@ -7,6 +7,7 @@ export interface RouteParams {
     food: []
     cloth: []
     electronics: []
+    not_found: []
 }
 
 export type Routes = {

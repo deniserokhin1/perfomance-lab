@@ -5,6 +5,6 @@ export const ElectronicsPageAsync = lazy(
     () =>
         new Promise((resolve) => {
             //@ts-ignore
-            setTimeout(() => resolve(import('./ElectronicsPage')), 1000)
+            setTimeout(() => resolve(import('./ElectronicsPage')), 500)
         })
 )

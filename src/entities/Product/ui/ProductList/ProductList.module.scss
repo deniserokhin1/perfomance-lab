@@ -1,0 +1,37 @@
+.tile {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 2px;
+
+    @media screen and (width>1920px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    @media screen and (width<=1920px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (width<=1680px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (width<=1000px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width<=600px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: clamp(470px, 60vw, 1500px);
+    padding-bottom: 2px;
+    margin: 0 auto;
+}

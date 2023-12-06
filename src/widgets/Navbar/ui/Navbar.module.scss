@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    height: var(--navbar-height);
+    background: var(--i-bg-color);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}

@@ -1,6 +1,6 @@
 import { classNames } from '@/shared/lib/classNames'
 import cls from './MainPage.module.scss'
-import { AppLink } from '@/shared/ui/AppLink'
+import { Text } from '@/shared/ui/Text'
 
 interface MainPageProps {
     className?: string
@@ -13,9 +13,7 @@ const MainPage = (props: MainPageProps) => {
 
     return (
         <section className={classNames(cls.container, mods, [className])}>
-            <AppLink to="/food">Еда</AppLink>
-            <AppLink to="/cloth">Одежда</AppLink>
-            <AppLink to="/electronics">Электроника</AppLink>
+            <Text title="Главная страница" />
         </section>
     )
 }

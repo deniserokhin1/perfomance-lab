@@ -1,6 +1,35 @@
 @import 'reset';
 @import './variables/global.scss';
+@import './themes/light.scss';
 
 body {
     font: var(--font-m);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    min-height: 100svh;
+    font: var(--font-m);
+    color: var(--primary-color);
+    background: var(--bg-color);
+    transition: background var(--theme-transition);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    padding: var(--wrapper-padding);
+    padding-bottom: 0;
+    padding-top: clamp(7.5px, 1vw, 12.5px);
+}
+
+.pageWrapper {
+    position: relative;
+    flex-grow: 1;
+    max-width: 100vw;
+    margin-left: auto;
 }

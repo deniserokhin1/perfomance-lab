@@ -4,12 +4,12 @@
 
     // S
     --font-size-s: clamp(14px, 1vw, 18px);
-    --font-line-s: clamp(20px, 1vw, 28px);
+    --font-line-s: clamp(15px, 0.5vw, 25px);
     --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
 
     // M
     --font-size-m: clamp(14px, 1.15vw, 22px);
-    --font-line-m: clamp(22px, 1.75vw, 30px);
+    --font-line-m: clamp(17px, 1vw, 25px);
     --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
 
     // ML
@@ -31,4 +31,8 @@
     --font-size-xl: clamp(32px, 3vw, 40px);
     --font-line-xl: clamp(40px, 3.5vw, 48px);
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+
+    // Размеры
+    --navbar-height: 50px;
+    --wrapper-padding: clamp(15px, 2vw, 25px);
 }

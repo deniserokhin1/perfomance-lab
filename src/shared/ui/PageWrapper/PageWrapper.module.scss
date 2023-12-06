@@ -1,0 +1,11 @@
+.container {
+    position: absolute;
+    inset: 0;
+    top: clamp(30px, 3vw, 40px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.footer {
+    height: var(--wrapper-padding);
+}

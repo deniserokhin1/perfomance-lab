@@ -11,11 +11,9 @@ const renderWithWrapper = (route: AppRoutesProps): JSX.Element => {
 export const AppRouter = () => {
     return (
         <Suspense fallback="Loading...">
-            {
-                <div className="">
-                    <Routes>{Object.values(routeConfig).map(renderWithWrapper)}</Routes>
-                </div>
-            }
+            <div className="pageWrapper">
+                <Routes>{Object.values(routeConfig).map(renderWithWrapper)}</Routes>
+            </div>
         </Suspense>
     )
 }

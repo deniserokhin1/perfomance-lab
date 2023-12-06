@@ -5,6 +5,6 @@ export const FoodPageAsync = lazy(
     () =>
         new Promise((resolve) => {
             //@ts-ignore
-            setTimeout(() => resolve(import('./FoodPage')), 1000)
+            setTimeout(() => resolve(import('./FoodPage')), 500)
         })
 )
