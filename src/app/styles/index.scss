@@ -1,0 +1,6 @@
+@import 'reset';
+@import './variables/global.scss';
+
+body {
+    font: var(--font-m);
+}
