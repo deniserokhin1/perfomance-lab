@@ -25,8 +25,8 @@ export const ProductList = (props: ProductListProps) => {
 
     return (
         <div className={classNames(cls.tile, {}, [className])}>
-            {products?.map((i) => (
-                <ProductListItem key={i.id} src={i.imageUrl} name={i.name} descr={i.description} />
+            {products?.map((i, index) => (
+                <ProductListItem key={index} item={i} />
             ))}
             {isLoading && skeletons()}
         </div>

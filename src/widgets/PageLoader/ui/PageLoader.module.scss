@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--animation-transition);
+
+    &.big {
+        width: calc(100vw - var(--sidebar-width-closed));
+        margin-left: var(--sidebar-width-closed);
+    }
+
+    &.open {
+        width: calc(100vw - var(--sidebar-width));
+        margin-left: var(--sidebar-width);
+    }
+}

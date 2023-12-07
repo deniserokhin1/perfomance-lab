@@ -1,0 +1,95 @@
+@mixin backgroundMixin {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px 10px;
+    color: var(--i-primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    background: var(--i-bg-color);
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+@mixin clearMixin {
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.animate {
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.clear {
+    @include clearMixin
+}
+
+.clear_invert {
+    @include clearMixin;
+
+    color: var(--i-primary-color);
+    background-color: transparent;
+}
+
+.background {
+    @include backgroundMixin;
+}
+
+.background_buy {
+    @include backgroundMixin;
+    background: var(--secondary-color);
+}
+
+.background_invert {
+    @include backgroundMixin;
+
+    color: var(--primary-color);
+    background: var(--bg-color);
+}
+
+.outline {
+    @include backgroundMixin;
+
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+.size_m {
+    font-size: var(--font-size-m);
+}
+
+.size_l {
+    font-size: var(--font-size-l);
+}
+
+.size_xl {
+    font-size: var(--font-size-xl);
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.maxWidth {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    font-family: var(--font-family-main);
+
+    &:hover {
+        filter: brightness(0.95);
+    }
+}

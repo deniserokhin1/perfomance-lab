@@ -7,8 +7,8 @@ import { TextAlign, TextSize, TextTheme } from '../../const'
 
 interface TextProps {
     className?: string
-    title?: string
-    text?: string
+    title?: string | number
+    text?: string | number
     theme?: TextTheme
     align?: TextAlign
     minWidth?: boolean

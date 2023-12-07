@@ -1,39 +1,67 @@
 import { classNames } from '@/shared/lib/classNames'
 import { Card } from '@/shared/ui/Card'
 import { AppImage } from '@/shared/ui/AppImage'
-
-import cls from './ProductListItem.module.scss'
 import { Skeleton } from '@/shared/ui/Skeleton'
 import { Text } from '@/shared/ui/Text'
-import { TextSize } from '@/shared/const'
+import { ButtonTheme, TextSize, TextTheme } from '@/shared/const'
+import StarIcon from '@/shared/assets/star.svg?react'
+import { Icon } from '@/shared/ui/Icon'
+import { Button } from '@/shared/ui/Button'
+import { getCurrentPrice, getDiscount } from '@/shared/lib/getPrice'
+
+import cls from './ProductListItem.module.scss'
+import { IProduct } from '../../model/types/product'
+import { HStack, VStack } from '@/shared/ui/Stack'
 
 interface ArticleListItemProps {
     className?: string
-    src: string
-    name: string
-    descr: string
+    item: IProduct
 }
 
 export const ProductListItem = (props: ArticleListItemProps) => {
-    const { className, src, name, descr } = props
+    const { className, item } = props
 
-    const mods = {}
+    const mods = {
+        [cls.hideRating]: !item.rating,
+    }
 
     return (
-        <div className={classNames(cls.tile, mods, [className])}>
-            <Card className={cls.card} maxHeight={true}>
+        <div className={classNames(cls.tile, {}, [className, cls.show])}>
+            <Card className={classNames(cls.card)} maxHeight={true}>
                 <div className={cls.imageWrapper}>
                     <AppImage
                         fallback={<Skeleton borderRadius="4px" className={cls.img} />}
                         errorFallback={<Skeleton borderRadius="4px" className={cls.img} />}
-                        src={src}
+                        src={item?.imageUrl}
                         className={cls.img}
                     />
                 </div>
-                <div className={cls.text}>
-                    <Text title={name} size={TextSize.S} />
-                    <Text text={descr} size={TextSize.S} />
-                </div>
+                <VStack gap="4">
+                    <Text title={item.brand} size={TextSize.S} />
+                    <Text title={item?.title} size={TextSize.S} />
+
+                    <HStack gap="4">
+                        <Text
+                            className={cls.price}
+                            title={getCurrentPrice(item.price, item.discount)}
+                            size={TextSize.M}
+                            theme={item.discount ? TextTheme.PRICE : TextTheme.DEFAULT}
+                        />
+
+                        {!!item.discount && (
+                            <Text title={item.price} size={TextSize.S} theme={TextTheme.CROSSED} />
+                        )}
+
+                        <Text text={getDiscount(item.discount)} theme={TextTheme.PRICE} />
+                    </HStack>
+
+                    <HStack className={classNames(cls.rating, mods)} gap="8">
+                        <Icon Svg={StarIcon} />
+                        <Text text={item.rating} />
+                    </HStack>
+
+                    <Button theme={ButtonTheme.BACKGROUND_BUY}>В корзину</Button>
+                </VStack>
             </Card>
         </div>
     )

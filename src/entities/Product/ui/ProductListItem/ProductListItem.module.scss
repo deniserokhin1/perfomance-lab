@@ -1,7 +1,6 @@
 .tile {
     width: 100%;
-    min-height: 200px;
-    cursor: pointer;
+    height: clamp(170px, 20vw, 200px);
     border-radius: 6px;
     transition: transform 0.3s;
 
@@ -9,20 +8,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 35%;
+        width: 33%;
         position: relative;
         aspect-ratio: 1;
     }
 
-    .img {
-        object-fit: cover;
-        border-radius: 4px;
+    .imageWrapperSkeleton {
+        width: 100%;
     }
 
-    .text {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
+    .img {
+        height: 100%;
+        object-fit: contain;
+        border-radius: 4px;
     }
 
     .date {
@@ -38,7 +36,7 @@
     &:hover {
         transform: scale(.99);
 
-        .date {
+        .button {
             opacity: 1;
         }
     }
@@ -77,6 +75,10 @@
 
     svg {
         fill: var(--secondary-color);
+    }
+
+    .hideRating.rating {
+        opacity: 0;
     }
 }
 

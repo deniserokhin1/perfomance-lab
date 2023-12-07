@@ -14,6 +14,15 @@
 
 .text {
     min-width: var(--min-width);
+
+    h2 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
 }
 
 .size_s {
@@ -91,13 +100,25 @@
     }
 }
 
-.error {
+.price {
     .title {
         color: var(--red-primary);
     }
 
     .text {
         color: var(--red-secondary)
+    }
+}
+
+.crossed {
+    .title {
+        text-decoration: line-through;
+        color: var(--primary-color);
+    }
+
+    .text {
+        text-decoration: line-through;
+        color: var(--primary-color)
     }
 }
 

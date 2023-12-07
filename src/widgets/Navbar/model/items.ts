@@ -7,6 +7,10 @@ export interface INavbarItems {
 
 export const navbarItemsList: INavbarItems[] = [
     {
+        path: routePath.main(),
+        text: 'Домой',
+    },
+    {
         path: routePath.food(),
         text: 'Еда',
     },

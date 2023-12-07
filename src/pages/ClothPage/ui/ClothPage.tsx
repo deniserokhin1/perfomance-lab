@@ -1,20 +1,30 @@
 import { memo } from 'react'
-import { classNames } from '@/shared/lib/classNames'
 import cls from './ClothPage.module.scss'
+import { HStack } from '@/shared/ui/Stack'
+import { Text } from '@/shared/ui/Text'
+import {
+    ProductInfinityList,
+    ProductListPagination,
+    ProductPageFilters,
+} from '@/features/ProductInfinityList'
+import { PageWrapper } from '@/shared/ui/PageWrapper'
 
-interface ClothPageProps {
-    className?: string
-}
-
-const ClothPage = memo((props: ClothPageProps) => {
-    const { className } = props
-
-    const mods = {}
-
+const ClothPage = memo(() => {
     return (
-        <div className={classNames(cls.container, mods, [className])}>
-            <h2>Cloth</h2>
-        </div>
+        <>
+            <HStack className={cls.height} justify="between" align="center">
+                <HStack gap="32" align="center">
+                    <Text title="Одежда" />
+                    <ProductPageFilters path="cloth" />
+                </HStack>
+
+                <ProductListPagination path="cloth" />
+            </HStack>
+
+            <PageWrapper>
+                <ProductInfinityList path="cloth" />
+            </PageWrapper>
+        </>
     )
 })
 

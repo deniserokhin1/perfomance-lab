@@ -1,0 +1,146 @@
+{
+    "electronics": [
+        {
+            "id": 1,
+            "brand": "Xiaomi",
+            "title": "Смартфон Xiaomi Redmi 12 8/256 ГБ, синий",
+            "price": 21490,
+            "type": "Смартфон",
+            "rating": 4.8,
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-1/wc1000/6679157977.jpg",
+            "discount": 32
+        },
+        {
+            "id": 2,
+            "brand": "Tecno",
+            "title": "Смартфон Tecno Camon 20 Pro 8/256 ГБ, черный",
+            "price": 11096,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-e/wc1000/6700284086.jpg",
+            "discount": 48,
+            "rating": 3.8
+        },
+        {
+            "id": 3,
+            "brand": "Tecno",
+            "title": "Смартфон Tecno Pova 5 Pro 5G 8/256 ГБ, черный",
+            "price": 21098,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-d/wc1000/6831968809.jpg",
+            "discount": 22,
+            "rating": 3.9
+        },
+        {
+            "id": 4,
+            "brand": "Infinix",
+            "title": "Смартфон Infinix NOTE 30 8/128 ГБ, оранжевый",
+            "price": 24990,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-o/wc500/6712867284.jpg",
+            "discount": 46,
+            "rating": 4.2
+        },
+        {
+            "id": 5,
+            "brand": "Samsung",
+            "title": "Смартфон Samsung Galaxy A54 8/256 ГБ, темно-серый",
+            "price": 49990,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-7/wc1000/6674460415.jpg",
+            "discount": 35,
+            "rating": 4.5
+        },
+        {
+            "id": 6,
+            "brand": "Samsung",
+            "title": "Смартфон Samsung Galaxy S22 8/256 ГБ, зеленый",
+            "price": 99214,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-q/wc1000/6495503270.jpg",
+            "discount": 53,
+            "rating": 4.8
+        },
+        {
+            "id": 7,
+            "brand": "Samsung",
+            "title": "Смартфон Samsung Galaxy S22 8/256 ГБ, розовый",
+            "price": 102571,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-o/wc1000/6434674284.jpg",
+            "rating": 4.8,
+            "discount": 27
+        },
+        {
+            "id": 8,
+            "brand": "Apple",
+            "title": "Смартфон Apple iPhone 15 Pro Max, 8/256 ГБ, синий",
+            "price": 180990,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-b/wc1000/6759761087.jpg",
+            "discount": 23,
+            "rating": 5
+        },
+        {
+            "id": 9,
+            "brand": "Apple",
+            "title": "Смартфон Apple iPhone X 3/256 ГБ, серебристый",
+            "price": 33300,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-n/wc1000/6641545955.jpg",
+            "discount": 40,
+            "rating": 4.2
+        },
+        {
+            "id": 10,
+            "brand": "Poco",
+            "title": "Смартфон Poco, Google Play NFC 6/128 ГБ, синий",
+            "price": 37205,
+            "type": "Смартфон",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-m/wc1000/6851915122.jpg",
+            "discount": 62,
+            "rating": 4.6
+        }
+    ],
+    "cloth": [
+        {
+            "id": 1,
+            "brand": "Fashion",
+            "title": "Рюкзак мужской женский городской черный",
+            "price": 999,
+            "type": "Рюкзак",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-u/wc1000/6647808702.jpg",
+            "discount": 55,
+            "rating": 4.4
+        },
+        {
+            "id": 2,
+            "brand": "Roncato",
+            "title": "Рюкзак Roncato",
+            "price": 4500,
+            "type": "Рюкзак",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-i/wc1000/6777584370.jpg",
+            "discount": 60,
+            "rating": 4.0
+        },
+        {
+            "id": 3,
+            "brand": "CURSUS",
+            "title": "Рюкзак CURSUS",
+            "price": 2090,
+            "type": "Рюкзак",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-m/wc1000/6334737382.jpg",
+            "discount": 65,
+            "rating": 4.1
+        },
+        {
+            "id": 4,
+            "brand": "Molecule",
+            "title": "Свитшот molecule streetwear",
+            "price": 7999,
+            "type": "Свитшот",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-s/wc1000/6847483312.jpg",
+            "discount": 67,
+            "rating": 4.0
+        }
+    ]
+}

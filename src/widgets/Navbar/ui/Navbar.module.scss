@@ -5,8 +5,9 @@
 }
 
 .wrapper {
+    margin-left: var(--wrapper-padding);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    column-gap: 16px;
     height: 100%;
 }

@@ -6,6 +6,8 @@ import { AppLink } from '@/shared/ui/AppLink'
 import cls from './NavbarItem.module.scss'
 import { AppLinkTheme } from '@/shared/const'
 import { INavbarItems } from '../../model/items'
+import { useAppSelector } from '@/app/providers/StoreProvider'
+import { getProductListIsLoading } from '@/features/ProductInfinityList'
 
 interface NavbarItemProps {
     className?: string
@@ -15,12 +17,16 @@ interface NavbarItemProps {
 export const NavbarItem = memo((props: NavbarItemProps) => {
     const { item } = props
 
-    const mods = {}
+    const isLoading = useAppSelector(getProductListIsLoading)
+
+    const mods = {
+        [cls.isLoading]: isLoading,
+    }
 
     return (
         <AppLink
             theme={AppLinkTheme.PRIMARY_INVERT}
-            className={classNames(cls.link, mods)}
+            className={classNames('', mods)}
             to={item.path}
             animation={true}
             hovered={true}

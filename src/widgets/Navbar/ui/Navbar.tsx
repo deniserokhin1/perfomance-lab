@@ -4,12 +4,13 @@ import { navbarItemsList } from '../model/items'
 import { NavbarItem } from './NavbarItem/NavbarItem'
 
 export const Navbar = () => {
+
     return (
         <header className={classNames(cls.container)}>
             <ul className={cls.wrapper}>
                 {navbarItemsList.map((i, id) => (
-                    <li>
-                        <NavbarItem item={i} key={id} />
+                    <li key={id}>
+                        <NavbarItem item={i} />
                     </li>
                 ))}
             </ul>

@@ -13,12 +13,10 @@ interface ProductListItemSkeletonProps {
 export const ProductListItemSkeleton = memo((props: ProductListItemSkeletonProps) => {
     const { className } = props
 
-    const mods = {}
-
     return (
-        <div className={classNames(cls.tile, mods, [className])}>
-            <Card className={cls.card}>
-                <div className={cls.imageWrapper}>
+        <div className={classNames(cls.tile, {}, [className])}>
+            <Card className={classNames(cls.card)}>
+                <div className={cls.imageWrapperSkeleton}>
                     <Skeleton className={cls.img} type="short" />
                 </div>
             </Card>
