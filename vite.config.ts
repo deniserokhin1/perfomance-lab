@@ -10,7 +10,7 @@ export default defineConfig({
     },
     define: {
         __API__: JSON.stringify(
-            'https://performance-lab-server-deniserokhin1.vercel.app'
+            'https://performance-lab-server-6ejsn9516-deniserokhin1.vercel.app'
         ),
         __IS_DEV__: JSON.stringify(true),
     },
