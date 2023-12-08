@@ -1,1 +1,1 @@
-export { ClothPageAsync as ClothPage } from './ui/ClothPageAsync'
+export { ClothPage } from './ui/ClothPage'

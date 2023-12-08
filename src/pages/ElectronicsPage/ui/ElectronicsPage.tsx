@@ -6,12 +6,12 @@ import { Text } from '@/shared/ui/Text'
 
 import cls from './ElectronicsPage.module.scss'
 
-const ElectronicsPage = () => {
+export const ElectronicsPage = () => {
     return (
         <>
             <HStack className={cls.height} justify="between" align="center">
                 <HStack gap="32" align="center">
-                    <Text minWidth={true} title="Электроника" />
+                    <Text title="Электроника" />
                     <ProductPageFilters path="electronics" />
                 </HStack>
 
@@ -24,5 +24,3 @@ const ElectronicsPage = () => {
         </>
     )
 }
-
-export default ElectronicsPage

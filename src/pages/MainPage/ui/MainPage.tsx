@@ -6,7 +6,7 @@ interface MainPageProps {
     className?: string
 }
 
-const MainPage = (props: MainPageProps) => {
+export const MainPage = (props: MainPageProps) => {
     const { className } = props
 
     const mods = {}
@@ -17,5 +17,3 @@ const MainPage = (props: MainPageProps) => {
         </section>
     )
 }
-
-export default MainPage

@@ -1,1 +1,1 @@
-export { ElectronicsPageAsync as ElectronicsPage } from './ui/ElectronicsPageAsync'
+export { ElectronicsPage } from './ui/ElectronicsPage'

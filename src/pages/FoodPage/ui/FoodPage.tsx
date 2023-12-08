@@ -9,12 +9,12 @@ import { PageWrapper } from '@/shared/ui/PageWrapper'
 
 import cls from './FoodPage.module.scss'
 
-const FoodPage = () => {
+export const FoodPage = () => {
     return (
         <>
             <HStack className={cls.height} justify="between" align="center">
                 <HStack gap="32" align="center">
-                    <Text minWidth={true} title="Еда" />
+                    <Text title="Еда" />
                     <ProductPageFilters path="food" />
                 </HStack>
 
@@ -27,5 +27,3 @@ const FoodPage = () => {
         </>
     )
 }
-
-export default FoodPage

@@ -1,1 +1,1 @@
-export { FoodPageAsync as FoodPage } from './ui/FoodPageAsync'
+export { FoodPage } from './ui/FoodPage'

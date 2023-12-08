@@ -9,12 +9,12 @@ import {
 } from '@/features/ProductInfinityList'
 import { PageWrapper } from '@/shared/ui/PageWrapper'
 
-const ClothPage = memo(() => {
+export const ClothPage = memo(() => {
     return (
         <>
             <HStack className={cls.height} justify="between" align="center">
                 <HStack gap="32" align="center">
-                    <Text minWidth={true} title="Одежда" />
+                    <Text title="Одежда" />
                     <ProductPageFilters path="cloth" />
                 </HStack>
 
@@ -27,5 +27,3 @@ const ClothPage = memo(() => {
         </>
     )
 })
-
-export default ClothPage
