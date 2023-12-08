@@ -1,4 +1,4 @@
-import { useCallback, useLayoutEffect, useState } from 'react'
+import { useCallback, useLayoutEffect } from 'react'
 
 import { useAppDispatch, useAppSelector } from '@/app/providers/StoreProvider'
 import { Button } from '@/shared/ui/Button'

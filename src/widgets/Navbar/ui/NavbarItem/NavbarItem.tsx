@@ -1,4 +1,4 @@
-import { memo, useCallback } from 'react'
+import { memo } from 'react'
 
 import { classNames } from '@/shared/lib/classNames'
 import { AppLink } from '@/shared/ui/AppLink'
@@ -6,9 +6,8 @@ import { AppLink } from '@/shared/ui/AppLink'
 import cls from './NavbarItem.module.scss'
 import { AppLinkTheme } from '@/shared/const'
 import { INavbarItems } from '../../model/items'
-import { useAppDispatch, useAppSelector } from '@/app/providers/StoreProvider'
+import { useAppSelector } from '@/app/providers/StoreProvider'
 import { getProductListIsLoading } from '@/features/ProductInfinityList'
-import { productListActions } from '@/features/ProductInfinityList/model/slice/productListSlice'
 
 interface NavbarItemProps {
     className?: string
