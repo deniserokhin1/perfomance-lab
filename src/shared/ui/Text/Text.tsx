@@ -33,8 +33,17 @@ export const Text = memo((props: TextProps) => {
     const mods = { [cls.fitContent]: minWidth, [cls.maxWidth]: maxWidth }
 
     return (
-        <div className={classNames(cls.container, mods, [className, cls[theme], cls[size]])}>
-            {title && <h2 className={classNames(cls.title, {}, [cls[align]])}>{title}</h2>}
+        <div
+            className={classNames(cls.container, mods, [
+                className,
+                cls[theme],
+                cls[size],
+            ])}
+        >
+            {title && (
+                <h2 className={classNames(cls.title, {}, [cls[align]])}>{title}</h2>
+            )}
+
             {text && (
                 <p className={classNames(cls.text, {}, [cls[align]])}>
                     {text}

@@ -1,4 +1,4 @@
-import { useCallback } from 'react'
+import { useCallback, useLayoutEffect, useState } from 'react'
 
 import { useAppDispatch, useAppSelector } from '@/app/providers/StoreProvider'
 import { Button } from '@/shared/ui/Button'
@@ -12,6 +12,8 @@ import {
 } from '../../model/selectors/getProductList'
 import { productListActions } from '../../model/slice/productListSlice'
 import { fetchProductListByParams } from '../../model/services/fetchProductListByParams'
+import cls from './ProductListPagination.module.scss'
+import { classNames } from '@/shared/lib/classNames'
 
 interface ProductListPaginationProps {
     className?: string
@@ -27,6 +29,11 @@ export const ProductListPagination = (props: ProductListPaginationProps) => {
 
     const { setPage } = productListActions
 
+    useLayoutEffect(() => {
+        dispatch(setPage(1))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     const onChangePage = useCallback(
         (page: number) => () => {
             if (page === currentPage) return
@@ -36,8 +43,12 @@ export const ProductListPagination = (props: ProductListPaginationProps) => {
         [currentPage, dispatch, setPage, path]
     )
 
+    const mods = {
+        [cls.show]: !!totalPages,
+    }
+
     return (
-        <HStack gap="8">
+        <HStack className={classNames(cls.container, mods)} gap="8">
             {new Array(totalPages).fill(0).map((_, index) => {
                 const page = index + 1
                 return (
@@ -45,7 +56,11 @@ export const ProductListPagination = (props: ProductListPaginationProps) => {
                         key={page}
                         onClick={onChangePage(page)}
                         children={page}
-                        theme={currentPage === page ? ButtonTheme.BACKGROUND : ButtonTheme.OUTLINE}
+                        theme={
+                            currentPage === page
+                                ? ButtonTheme.BACKGROUND
+                                : ButtonTheme.OUTLINE
+                        }
                     />
                 )
             })}

@@ -1,0 +1,8 @@
+.container {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.container.show {
+    opacity: 1;
+}

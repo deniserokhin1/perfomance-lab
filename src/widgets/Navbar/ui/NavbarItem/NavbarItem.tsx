@@ -20,14 +20,6 @@ export const NavbarItem = memo((props: NavbarItemProps) => {
 
     const isLoading = useAppSelector(getProductListIsLoading)
 
-    const dispatch = useAppDispatch()
-
-    const { setPage } = productListActions
-
-    const resetPage = useCallback(() => {
-        dispatch(setPage(1))
-    }, [dispatch, setPage])
-
     const mods = {
         [cls.isLoading]: isLoading,
     }
@@ -40,7 +32,6 @@ export const NavbarItem = memo((props: NavbarItemProps) => {
                 to={item.path}
                 animation={true}
                 hovered={true}
-                onClick={resetPage}
             >
                 <p className={classNames(cls.text)}>{item.text}</p>
             </AppLink>

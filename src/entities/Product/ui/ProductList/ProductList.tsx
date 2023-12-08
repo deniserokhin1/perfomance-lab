@@ -16,14 +16,12 @@ interface ProductListProps {
 export const ProductList = (props: ProductListProps) => {
     const { className, isLoading, products, addCartItem } = props
 
+    const noData = !isLoading && !products.length
+
     const skeletons = (): JSX.Element[] => {
         return new Array(9)
             .fill(1)
             .map((_, index) => <ProductListItemSkeleton key={index} />)
-    }
-
-    if (!isLoading && !products.length) {
-        return <Text title="Товары не найдены" />
     }
 
     return (
@@ -32,6 +30,7 @@ export const ProductList = (props: ProductListProps) => {
                 <ProductListItem key={index} item={i} addCartItem={addCartItem} />
             ))}
             {isLoading && skeletons()}
+            {noData && <Text title="Товары не найдены" />}
         </div>
     )
 }

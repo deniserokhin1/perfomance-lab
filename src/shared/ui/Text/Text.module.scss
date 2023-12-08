@@ -61,7 +61,7 @@
 
 .fitContent {
     .title {
-        width: clamp(150px, 20vw, 220px);
+        width: clamp(150px, 20vw, 200px);
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -71,7 +71,7 @@
     }
 
     .text {
-        width: clamp(150px, 20vw, 220px);
+        width: clamp(150px, 20vw, 200px);
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;

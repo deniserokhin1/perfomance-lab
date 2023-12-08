@@ -52,17 +52,14 @@ const productListSlice = createSlice({
             })
             .addCase(fetchProductList.pending, (state) => {
                 state.totalPages = 0
-                state.isLoading = true
             })
             .addCase(
                 fetchProductList.fulfilled,
                 (state, action: PayloadAction<number>) => {
-                    state.isLoading = false
                     state.totalPages = Math.ceil(action.payload / state.limit)
                 }
             )
             .addCase(fetchProductList.rejected, (state, action) => {
-                state.isLoading = false
                 state.error = action.payload
             })
     },
