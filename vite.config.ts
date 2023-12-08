@@ -9,9 +9,7 @@ export default defineConfig({
         alias: [{ find: '@', replacement: '/src' }],
     },
     define: {
-        __API__: JSON.stringify(
-            'https://performance-lab-server-deniserokhin1.vercel.app'
-        ),
+        __API__: JSON.stringify('https://performance-lab-server.vercel.app'),
         __IS_DEV__: JSON.stringify(true),
     },
     css: {
