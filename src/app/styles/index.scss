@@ -22,8 +22,8 @@ body {
     display: flex;
     flex-grow: 1;
     padding: var(--wrapper-padding);
+    padding-top: var(--wrapper-padding);
     padding-bottom: 0;
-    padding-top: clamp(7.5px, 1vw, 12.5px);
 }
 
 .pageWrapper {

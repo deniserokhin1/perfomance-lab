@@ -4,7 +4,7 @@ import { classNames } from '@/shared/lib/classNames'
 
 import cls from './Flex.module.scss'
 
-export type FlexJustify = 'start' | 'center' | 'end' | 'between'
+export type FlexJustify = 'start' | 'center' | 'end' | 'between' | 'evenly'
 export type FlexAlign = 'start' | 'center' | 'end'
 export type FlexDirection = 'row' | 'column'
 export type FlexGap = '4' | '8' | '16' | '32'
@@ -14,6 +14,7 @@ const justifyClasses: Record<FlexJustify, string> = {
     between: cls.justifyBetween,
     center: cls.justifyCenter,
     end: cls.justifyEnd,
+    evenly: cls.justifyEvenly,
 }
 
 const alignClasses: Record<FlexAlign, string> = {
@@ -42,6 +43,7 @@ export interface FlexProps {
     direction: FlexDirection
     gap?: FlexGap
     max?: boolean
+    half?: boolean
 }
 
 export const Flex = (props: FlexProps): JSX.Element => {

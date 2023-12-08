@@ -5,7 +5,7 @@
             "brand": "Xiaomi",
             "title": "Смартфон Xiaomi Redmi 12 8/256 ГБ, синий",
             "price": 21490,
-            "type": "Смартфон",
+            "type": "smartphone",
             "rating": 4.8,
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-1/wc1000/6679157977.jpg",
             "discount": 32
@@ -15,7 +15,7 @@
             "brand": "Tecno",
             "title": "Смартфон Tecno Camon 20 Pro 8/256 ГБ, черный",
             "price": 11096,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-e/wc1000/6700284086.jpg",
             "discount": 48,
             "rating": 3.8
@@ -25,7 +25,7 @@
             "brand": "Tecno",
             "title": "Смартфон Tecno Pova 5 Pro 5G 8/256 ГБ, черный",
             "price": 21098,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-d/wc1000/6831968809.jpg",
             "discount": 22,
             "rating": 3.9
@@ -35,7 +35,7 @@
             "brand": "Infinix",
             "title": "Смартфон Infinix NOTE 30 8/128 ГБ, оранжевый",
             "price": 24990,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-o/wc500/6712867284.jpg",
             "discount": 46,
             "rating": 4.2
@@ -45,7 +45,7 @@
             "brand": "Samsung",
             "title": "Смартфон Samsung Galaxy A54 8/256 ГБ, темно-серый",
             "price": 49990,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-7/wc1000/6674460415.jpg",
             "discount": 35,
             "rating": 4.5
@@ -55,7 +55,7 @@
             "brand": "Samsung",
             "title": "Смартфон Samsung Galaxy S22 8/256 ГБ, зеленый",
             "price": 99214,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-q/wc1000/6495503270.jpg",
             "discount": 53,
             "rating": 4.8
@@ -65,7 +65,7 @@
             "brand": "Samsung",
             "title": "Смартфон Samsung Galaxy S22 8/256 ГБ, розовый",
             "price": 102571,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-o/wc1000/6434674284.jpg",
             "rating": 4.8,
             "discount": 27
@@ -75,7 +75,7 @@
             "brand": "Apple",
             "title": "Смартфон Apple iPhone 15 Pro Max, 8/256 ГБ, синий",
             "price": 180990,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-b/wc1000/6759761087.jpg",
             "discount": 23,
             "rating": 5
@@ -85,7 +85,7 @@
             "brand": "Apple",
             "title": "Смартфон Apple iPhone X 3/256 ГБ, серебристый",
             "price": 33300,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-n/wc1000/6641545955.jpg",
             "discount": 40,
             "rating": 4.2
@@ -95,10 +95,50 @@
             "brand": "Poco",
             "title": "Смартфон Poco, Google Play NFC 6/128 ГБ, синий",
             "price": 37205,
-            "type": "Смартфон",
+            "type": "smartphone",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-m/wc1000/6851915122.jpg",
             "discount": 62,
             "rating": 4.6
+        },
+        {
+            "id": 11,
+            "brand": "ASUS",
+            "title": "14 Ноутбук ASUS VivoBook 14, Intel Core i3-1215U (1.2 ГГц), RAM 8 ГБ, SSD 256 ГБ",
+            "price": 75090,
+            "type": "laptop",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-r/wc1000/6725135967.jpg",
+            "discount": 49,
+            "rating": 4.6
+        },
+        {
+            "id": 12,
+            "brand": "Honor",
+            "title": "14 Ноутбук Honor MagicBook 14 (DOS), AMD Ryzen 5 5500U (2.1 ГГц), RAM 8 ГБ, SSD 512 ГБ, AMD Radeon Graphics, Без системы, (5301AFVH)",
+            "price": 54990,
+            "type": "laptop",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-y/wc1000/6709509610.jpg",
+            "discount": 20,
+            "rating": 4.7
+        },
+        {
+            "id": 13,
+            "brand": "MSI",
+            "title": "15.6 Игровой ноутбук MSI Katana 15 B12VGK-813US Intel Core i7 12650H /15.6/1920x1080/64GB/8TB SSD/NVIDIA GeForce RTX 4070 8GB/Windows",
+            "price": 289990,
+            "type": "laptop",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-h/wc1000/6853240709.jpg",
+            "discount": 17,
+            "rating": 4.8
+        },
+        {
+            "id": 14,
+            "brand": "Apple",
+            "title": "13.6 Ноутбук Apple MacBook Air 13, Apple M2 (8C CPU, 8C GPU), RAM 8 ГБ, SSD 256 ГБ, macOS, (MLY33RU/A), Midnight, Российская клавиатура",
+            "price": 149990,
+            "type": "laptop",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-r/wc1000/6483696315.jpg",
+            "discount": 21,
+            "rating": 4.9
         }
     ],
     "cloth": [
@@ -107,7 +147,7 @@
             "brand": "Fashion",
             "title": "Рюкзак мужской женский городской черный",
             "price": 999,
-            "type": "Рюкзак",
+            "type": "backpack",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-u/wc1000/6647808702.jpg",
             "discount": 55,
             "rating": 4.4
@@ -117,7 +157,7 @@
             "brand": "Roncato",
             "title": "Рюкзак Roncato",
             "price": 4500,
-            "type": "Рюкзак",
+            "type": "backpack",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-i/wc1000/6777584370.jpg",
             "discount": 60,
             "rating": 4.0
@@ -127,7 +167,7 @@
             "brand": "CURSUS",
             "title": "Рюкзак CURSUS",
             "price": 2090,
-            "type": "Рюкзак",
+            "type": "backpack",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-m/wc1000/6334737382.jpg",
             "discount": 65,
             "rating": 4.1
@@ -137,10 +177,202 @@
             "brand": "Molecule",
             "title": "Свитшот molecule streetwear",
             "price": 7999,
-            "type": "Свитшот",
+            "type": "sweatshirt",
             "imageUrl": "https://ir.ozone.ru/s3/multimedia-s/wc1000/6847483312.jpg",
             "discount": 67,
             "rating": 4.0
+        },
+        {
+            "id": 5,
+            "brand": "Sara N",
+            "title": "Толстовка",
+            "price": 4200,
+            "type": "sweatshirt",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-h/wc1000/6842848913.jpg",
+            "discount": 62,
+            "rating": 4.5
+        },
+        {
+            "id": 6,
+            "brand": "Fashion",
+            "title": "Кроссовки “Парижский ночной сон”",
+            "price": 22000,
+            "type": "shoes",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-m/wc1000/6838662190.jpg",
+            "discount": 74,
+            "rating": 4.5
+        },
+        {
+            "id": 7,
+            "brand": "Nike",
+            "title": "Кроссовки Nike Quest 4",
+            "price": 11090,
+            "type": "shoes",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-b/wc1000/6607655315.jpg",
+            "discount": 50,
+            "rating": 4.7
+        },
+        {
+            "id": 8,
+            "brand": "Nike",
+            "title": "Кроссовки Nike Just do it",
+            "price": 18420,
+            "type": "shoes",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-y/wc1000/6698275234.jpg",
+            "discount": 70,
+            "rating": 4.8
+        },
+        {
+            "id": 9,
+            "brand": "Nike",
+            "title": "Кроссовки Nike Wmns Quest 5",
+            "price": 13290,
+            "type": "shoes",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-g/wc1000/6579395752.jpg",
+            "discount": 58,
+            "rating": 4.8
+        },
+        {
+            "id": 10,
+            "brand": "Nike",
+            "title": "Кроссовки Nike W Air Max Pre-Day Se",
+            "price": 26190,
+            "type": "shoes",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-l/wc1000/6458263893.jpg",
+            "discount": 62,
+            "rating": 4.5
+        },
+        {
+            "id": 11,
+            "brand": "PUMA",
+            "title": "Кроссовки PUMA",
+            "price": 8838,
+            "type": "shoes",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-z/wc1000/6629401691.jpg",
+            "discount": 17,
+            "rating": 4.4
+        }
+    ],
+    "food": [
+        {
+            "id": 1,
+            "brand": "Milka",
+            "title": "Печенье Milka Mini Сookies, с кусочками шоколада, 100 г",
+            "price": 205,
+            "type": "сookies",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-9/wc700/6065123649.jpg",
+            "discount": 39,
+            "rating": 4.8
+        },
+        {
+            "id": 2,
+            "brand": "Lay's",
+            "title": "Чипсы картофельные Lay's Из печи Лисички в сметане 85г",
+            "price": 112,
+            "type": "chips",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-f/wc700/6725315991.jpg",
+            "discount": 29,
+            "rating": 4.8
+        },
+        {
+            "id": 3,
+            "brand": "Увелка",
+            "title": "Рис белый в пакетиках для варки Увелка, круглозерный",
+            "price": 103,
+            "type": "chips",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-0/wc700/6846829476.jpg",
+            "discount": 27,
+            "rating": 4.9
+        },
+        {
+            "id": 4,
+            "brand": "Увелка",
+            "title": "Гречка ядрица Увелка, 800 г",
+            "price": 151,
+            "type": "cereal",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-m/wc700/6050883970.jpg",
+            "discount": 52,
+            "rating": 4.9
+        },
+        {
+            "id": 5,
+            "brand": "Lay's",
+            "title": "Чипсы картофельные Lay's Сметана-Лук, 140 г",
+            "price": 149,
+            "type": "chips",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-5/wc700/6853684025.jpg",
+            "discount": 26,
+            "rating": 4.8
+        },
+        {
+            "id": 6,
+            "brand": "Milky Way",
+            "title": "Шоколадные батончики Milky Way, 4 шт по 26 г",
+            "price": 84,
+            "type": "chocolate",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-x/wc700/6074471829.jpg",
+            "discount": 7,
+            "rating": 4.9
+        },
+        {
+            "id": 7,
+            "brand": "Красный Октябрь",
+            "title": "Пирожные бисквитные Аленка со вкусом молочного Шоколада, 175 г",
+            "price": 169,
+            "type": "chocolate",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-2/wc700/6083533034.jpg",
+            "discount": 43,
+            "rating": 4.7
+        },
+        {
+            "id": 8,
+            "brand": "Mars",
+            "title": "Конфеты шоколадные батончики Mars Minis, 182 г",
+            "price": 166,
+            "type": "chocolate",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-s/wc700/6308484676.jpg",
+            "discount": 22,
+            "rating": 4.9
+        },
+        {
+            "id": 9,
+            "brand": "Mars",
+            "title": "Конфеты шоколадные батончики Mars Minis, 182 г",
+            "price": 166,
+            "type": "chocolate",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-s/wc700/6308484676.jpg",
+            "discount": 22,
+            "rating": 4.9
+        },
+        {
+            "id": 10,
+            "brand": "Makfa",
+            "title": "Гречка ядрица Makfa, 800 г",
+            "price": 129,
+            "type": "cereal",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-i/wc700/6342650862.jpg",
+            "discount": 40,
+            "rating": 4.9
+        },
+        {
+            "id": 11,
+            "brand": "Nesquik",
+            "title": "Какао Nesquik растворимое в металлической банке, 390г",
+            "price": 2250,
+            "type": "drinks",
+            "imageUrl": "https://ir.ozone.ru/s3/multimedia-v/wc700/6608846443.jpg",
+            "discount": 77,
+            "rating": 4.9
+        },
+        {
+            "id": 12,
+            "brand": "Choco-Pie",
+            "title": "Пирожное Choco-Pie Dark, в шоколадной глазури, 360 г",
+            "price": 222,
+            "type": "сookies",
+            "imageUrl": "https://ir.ozone.ru/multimedia/wc700/1028039591.jpg",
+            "discount": 36,
+            "rating": 4.9
         }
     ]
 }

@@ -1,12 +1,12 @@
 import { memo } from 'react'
 import { classNames } from '@/shared/lib/classNames'
-import cls from './Cart.module.scss'
+import cls from './Sidebar.module.scss'
 
-interface CartProps {
+interface SidebarProps {
     className?: string
 }
 
-export const Cart = memo((props: CartProps) => {
+export const Sidebar = memo((props: SidebarProps) => {
     const { className } = props
 
     const mods = {}

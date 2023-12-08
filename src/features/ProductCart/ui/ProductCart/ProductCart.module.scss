@@ -1,0 +1,15 @@
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 2;
+    background: var(--overlay-background);
+    transition: all var(--animation-transition);
+}
+
+.showOverlay.overlay {
+    opacity: 1;
+    pointer-events: auto;
+}

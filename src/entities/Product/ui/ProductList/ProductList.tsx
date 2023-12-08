@@ -9,24 +9,27 @@ import { IProduct } from '../../model/types/product'
 interface ProductListProps {
     className?: string
     isLoading?: boolean
-    products?: IProduct[]
+    products: IProduct[]
+    addCartItem?: (product: IProduct) => () => void
 }
 
 export const ProductList = (props: ProductListProps) => {
-    const { className, isLoading, products } = props
+    const { className, isLoading, products, addCartItem } = props
 
     const skeletons = (): JSX.Element[] => {
-        return new Array(9).fill(1).map((_, index) => <ProductListItemSkeleton key={index} />)
+        return new Array(9)
+            .fill(1)
+            .map((_, index) => <ProductListItemSkeleton key={index} />)
     }
 
-    if (!isLoading && !products?.length) {
+    if (!isLoading && !products.length) {
         return <Text title="Товары не найдены" />
     }
 
     return (
         <div className={classNames(cls.tile, {}, [className])}>
             {products?.map((i, index) => (
-                <ProductListItem key={index} item={i} />
+                <ProductListItem key={index} item={i} addCartItem={addCartItem} />
             ))}
             {isLoading && skeletons()}
         </div>

@@ -1,0 +1,31 @@
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.img {
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.title {
+    height: clamp(30px, 1.5vw, 50px);
+
+    p {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.textBlockWidth {
+    width: 60%;
+}

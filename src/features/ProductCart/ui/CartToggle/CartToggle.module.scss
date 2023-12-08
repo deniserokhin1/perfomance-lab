@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.dote {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: var(--red-primary);
+    right: 0;
+}

@@ -1,19 +1,30 @@
+import { HStack } from '@/shared/ui/Stack'
+import { Text } from '@/shared/ui/Text'
+import {
+    ProductInfinityList,
+    ProductListPagination,
+    ProductPageFilters,
+} from '@/features/ProductInfinityList'
+import { PageWrapper } from '@/shared/ui/PageWrapper'
+
 import cls from './FoodPage.module.scss'
-import type { FC } from 'react'
-import { classNames } from '@/shared/lib/classNames'
 
-interface FoodPageProps {
-    className?: string
-}
-
-const FoodPage: FC<FoodPageProps> = (props) => {
-    const { className } = props
-    const mods = {}
-
+const FoodPage = () => {
     return (
-        <section className={classNames(cls.container, mods, [className])}>
-            <h2>Food</h2>
-        </section>
+        <>
+            <HStack className={cls.height} justify="between" align="center">
+                <HStack gap="32" align="center">
+                    <Text minWidth={true} title="Еда" />
+                    <ProductPageFilters path="food" />
+                </HStack>
+
+                <ProductListPagination path="food" />
+            </HStack>
+
+            <PageWrapper>
+                <ProductInfinityList path="food" />
+            </PageWrapper>
+        </>
     )
 }
 

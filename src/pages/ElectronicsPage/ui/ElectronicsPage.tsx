@@ -11,7 +11,7 @@ const ElectronicsPage = () => {
         <>
             <HStack className={cls.height} justify="between" align="center">
                 <HStack gap="32" align="center">
-                    <Text title="Электроника" />
+                    <Text minWidth={true} title="Электроника" />
                     <ProductPageFilters path="electronics" />
                 </HStack>
 

@@ -12,7 +12,7 @@ const initialState: ProductListSchema = {
     data: [],
     filter: ProductSortFeild.DISCOUNT,
     hasMore: true,
-    limit: 10,
+    limit: 9,
     page: 1,
     sort: 'desc',
 }
@@ -35,28 +35,32 @@ const productListSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchProductListByParams.pending, (state) => {
-                state.data = []
                 state.isLoading = true
+                state.data = []
             })
             .addCase(
                 fetchProductListByParams.fulfilled,
                 (state, action: PayloadAction<IProduct[]>) => {
-                    state.isLoading = false
                     state.data = action.payload
+                    state.isLoading = false
                 }
             )
             .addCase(fetchProductListByParams.rejected, (state, action) => {
                 state.isLoading = false
                 state.error = action.payload
+                state.data = []
             })
             .addCase(fetchProductList.pending, (state) => {
                 state.totalPages = 0
                 state.isLoading = true
             })
-            .addCase(fetchProductList.fulfilled, (state, action: PayloadAction<number>) => {
-                state.isLoading = false
-                state.totalPages = Math.ceil(action.payload / state.limit)
-            })
+            .addCase(
+                fetchProductList.fulfilled,
+                (state, action: PayloadAction<number>) => {
+                    state.isLoading = false
+                    state.totalPages = Math.ceil(action.payload / state.limit)
+                }
+            )
             .addCase(fetchProductList.rejected, (state, action) => {
                 state.isLoading = false
                 state.error = action.payload
@@ -64,4 +68,5 @@ const productListSlice = createSlice({
     },
 })
 
-export const { actions: productListActions, reducer: productListReducer } = productListSlice
+export const { actions: productListActions, reducer: productListReducer } =
+    productListSlice

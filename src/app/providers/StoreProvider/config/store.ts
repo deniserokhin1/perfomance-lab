@@ -1,11 +1,15 @@
 import { ReducersMapObject, configureStore } from '@reduxjs/toolkit'
-import { StateSchema } from './StateSchema'
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
+
 import { $api } from '@/shared/api/api'
 import { productListReducer } from '@/features/ProductInfinityList'
-import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
+import { cartReducer } from '@/features/ProductCart'
+
+import { StateSchema } from './StateSchema'
 
 const rootReducer: ReducersMapObject<StateSchema> = {
     productList: productListReducer,
+    cart: cartReducer,
 }
 
 export const store = configureStore({

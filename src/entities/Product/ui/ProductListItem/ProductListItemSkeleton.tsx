@@ -15,7 +15,7 @@ export const ProductListItemSkeleton = memo((props: ProductListItemSkeletonProps
 
     return (
         <div className={classNames(cls.tile, {}, [className])}>
-            <Card className={classNames(cls.card)}>
+            <Card className={classNames(cls.card)} maxHeight={true}>
                 <div className={cls.imageWrapperSkeleton}>
                     <Skeleton className={cls.img} type="short" />
                 </div>

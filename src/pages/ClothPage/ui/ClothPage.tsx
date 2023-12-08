@@ -14,7 +14,7 @@ const ClothPage = memo(() => {
         <>
             <HStack className={cls.height} justify="between" align="center">
                 <HStack gap="32" align="center">
-                    <Text title="Одежда" />
+                    <Text minWidth={true} title="Одежда" />
                     <ProductPageFilters path="cloth" />
                 </HStack>
 

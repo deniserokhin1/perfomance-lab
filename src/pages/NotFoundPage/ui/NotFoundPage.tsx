@@ -1,5 +1,6 @@
 import { classNames } from '@/shared/lib/classNames'
 import cls from './NotFoundPage.module.scss'
+import { Text } from '@/shared/ui/Text'
 
 interface NotFoundPageProps {
     className?: string
@@ -12,7 +13,7 @@ const NotFoundPage = (props: NotFoundPageProps) => {
 
     return (
         <section className={classNames(cls.container, mods, [className])}>
-            <h2>Страница не найдена</h2>
+            <Text title="Страница не найдена" />
         </section>
     )
 }

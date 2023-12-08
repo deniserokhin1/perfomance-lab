@@ -9,7 +9,7 @@
 
     // M
     --font-size-m: clamp(14px, 1.15vw, 22px);
-    --font-line-m: clamp(17px, 1vw, 25px);
+    --font-line-m: clamp(17px, 1.5vw, 25px);
     --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
 
     // ML
@@ -35,6 +35,10 @@
     // Размеры
     --navbar-height: 50px;
     --wrapper-padding: clamp(15px, 2vw, 25px);
+    --sidebar-width: clamp(370px, 30vw, 500px);
+
+    // Переходы
+    --animation-transition: 0.3s;
 
     // Цвета
     --overlay-background: rgb(30 56 92 / 60%);

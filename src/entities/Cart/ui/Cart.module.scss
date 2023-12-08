@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 8px;
+    position: absolute;
+    top: calc(var(--navbar-height) + var(--wrapper-padding));
+    bottom: var(--wrapper-padding);
+    right: calc(var(--sidebar-width) * -1);
+    width: var(--sidebar-width);
+    background: var(--bg-color);
+    z-index: 5;
+    border-radius: 8px;
+    transition: all var(--animation-transition) ease-in-out;
+    will-change: auto;
+    overflow: scroll;
+}
+
+.container.isOpen {
+    right: var(--wrapper-padding);
+}

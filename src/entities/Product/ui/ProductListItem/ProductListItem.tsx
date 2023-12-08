@@ -16,10 +16,11 @@ import { HStack, VStack } from '@/shared/ui/Stack'
 interface ArticleListItemProps {
     className?: string
     item: IProduct
+    addCartItem?: (product: IProduct) => () => void
 }
 
 export const ProductListItem = (props: ArticleListItemProps) => {
-    const { className, item } = props
+    const { className, item, addCartItem } = props
 
     const mods = {
         [cls.hideRating]: !item.rating,
@@ -31,25 +32,30 @@ export const ProductListItem = (props: ArticleListItemProps) => {
                 <div className={cls.imageWrapper}>
                     <AppImage
                         fallback={<Skeleton borderRadius="4px" className={cls.img} />}
-                        errorFallback={<Skeleton borderRadius="4px" className={cls.img} />}
+                        errorFallback={
+                            <Skeleton borderRadius="4px" className={cls.img} />
+                        }
                         src={item?.imageUrl}
                         className={cls.img}
                     />
                 </div>
                 <VStack gap="4">
                     <Text title={item.brand} size={TextSize.S} />
-                    <Text title={item?.title} size={TextSize.S} />
+                    <Text title={item?.title} size={TextSize.S} minWidth={true} />
 
                     <HStack gap="4">
                         <Text
-                            className={cls.price}
                             title={getCurrentPrice(item.price, item.discount)}
                             size={TextSize.M}
                             theme={item.discount ? TextTheme.PRICE : TextTheme.DEFAULT}
                         />
 
                         {!!item.discount && (
-                            <Text title={item.price} size={TextSize.S} theme={TextTheme.CROSSED} />
+                            <Text
+                                title={item.price}
+                                size={TextSize.S}
+                                theme={TextTheme.CROSSED}
+                            />
                         )}
 
                         <Text text={getDiscount(item.discount)} theme={TextTheme.PRICE} />
@@ -60,7 +66,12 @@ export const ProductListItem = (props: ArticleListItemProps) => {
                         <Text text={item.rating} />
                     </HStack>
 
-                    <Button theme={ButtonTheme.BACKGROUND_BUY}>В корзину</Button>
+                    <Button
+                        onClick={addCartItem?.(item)}
+                        theme={ButtonTheme.BACKGROUND_BUY}
+                    >
+                        В корзину
+                    </Button>
                 </VStack>
             </Card>
         </div>
